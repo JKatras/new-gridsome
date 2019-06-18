@@ -10,7 +10,7 @@ collections:
     label: "Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # allow users to create new documents in this collection
-    slug: "{{slug}}_{{year}}{{month}}{{day}}" # Filename template. default {{slug}}
+    slug: "{{slug}}" # Filename template. Default {{slug}} is a url-safe version of the post's title
     extension: "md"
     fields:
         - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
