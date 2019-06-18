@@ -1,12 +1,12 @@
 <template>
     <Layout>
         <h1>{{ $page.post.title }}</h1>
-        <h2>{{ $page.post.subhead }}
+        <h2>{{ $page.post.subhead }}</h2>
         <div class="date-published">
-            <p>{{ $page.post }}</p>
+            <p>{{ $page.post.date }}</p>
         </div>
         <div class="featured-image">
-            <g-image v-if="$page.post.featuredImage" :src="$page.post.featuredImage">
+            <g-image v-if="$page.post.featuredImage" :src="$page.post.featuredImage" />
         </div>
         
     </Layout>
