@@ -6,5 +6,12 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: []
+  plugins: [
+    {
+        use: `gridsome-plugin-netlify-cms`,
+        options: {
+          publicPath: `/admin`
+        }
+    }
+  ]
 }
