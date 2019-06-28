@@ -1,7 +1,7 @@
 ---
 title: First Aid/CPR
-courseDesc: First Aid/CPR is mandatory
-location: 121 First St
-dateTime: 2019-07-03T19:00:34.749Z
+courseDetails:
+  - dateTime: 2019-07-12T20:00:00.000Z
+    location: 11 First St
 ---
 
