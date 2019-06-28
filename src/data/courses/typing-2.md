@@ -7,5 +7,7 @@ courseDetails:
     location: 33 Third St
   - dateTime: 2019-07-04T19:53:35.640Z
     location: 44 Fourth St
+  - dateTime: 2019-06-28T21:31:02.877Z
+    location: we asdfgadfg
 ---
 
