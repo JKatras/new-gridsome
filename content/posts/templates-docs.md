@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates
+title: Templates docs
 subhead: from Gridsome docs
 date: 
 featuredImage: /images/uploads/nuke.jpg
