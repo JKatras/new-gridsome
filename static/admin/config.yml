@@ -21,7 +21,7 @@ collections:
         - {label: "Body", name: "body", widget: "markdown"}
   - name: "courses"
     label: "Training Course"
-    folder: "~/data/courses"
+    folder: "src/data/courses"
     widget: "list"
     create: true
     allow_add: true
