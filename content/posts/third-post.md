@@ -10,7 +10,7 @@ You can browse available collections in the schema tab inside the [GraphQL explo
 
 The example shows a Blog.vue in /pages where Blog posts will be listed and then a BlogPost.vue inside /templates that will show the single post view.
 
-##Creating templates
+## Creating templates
 
 Templates must have a <page-query> block which fetches the source node for the current page. You can use the $id variable to get the node.
 
