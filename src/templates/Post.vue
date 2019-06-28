@@ -8,8 +8,8 @@
         <div class="featured-image">
             <g-image v-if="$page.post.featuredImage" :src="$page.post.featuredImage" />
         </div>
-        <section>
-            {{ $page.post.content }}
+        <section v-html="$page.post.content">
+            
         </section>
     </Layout>
 </template>
