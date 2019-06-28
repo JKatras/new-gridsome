@@ -21,10 +21,24 @@ collections:
         - {label: "Body", name: "body", widget: "markdown"}
   - name: "courses"
     label: "Training Course"
-    folder: "content/courses"
+    folder: "~/data/courses"
+    widget: "list"
     create: true
-    extension: "md"
+    allow_add: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Course description", name: "courseDesc", widget: "string"}
-      - {label: "Date and Time", name: "dateTime", widget: "datetime"}
+      - {label: "Course Name", name: "title", widget: "string"}
+      - label: "Course Details"
+        name: "courseDetails"
+        allow_add: true
+        widget: "list"
+        fields:
+          - {label: Location, name: location, widget: string}
+          - {label: Date and Time, name: dateTime, widget: datetime}
+
+
+
+
+
+      # - {label: "Course name", name: "title", widget: "string"}
+      # - {label: "Location", name: "location", widget: "string"}
+      # - {label: "Date and Time", name: "dateTime", widget: "datetime"}
