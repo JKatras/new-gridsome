@@ -5,6 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  icon: {
+    favicon: './src/favicon.png'
+  },
   siteName: 'Netlify CMS + Gridsome',
   plugins: [
     {
@@ -21,5 +24,6 @@ module.exports = {
           publicPath: `/admin`
         }
     }
-  ]
+  ],
+  titleTemplate: '%s'
 }
