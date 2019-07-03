@@ -1,16 +1,14 @@
 <template>
     <Layout>
-        <h1>{{ $page.post.title }}</h1>
-        <h2>{{ $page.post.subhead }}</h2>
-        <div class="date-published">
+        <header class="post-title">
+            <h1>{{ $page.post.title }}</h1>
+            <h2>{{ $page.post.subhead }}</h2>
             <p>{{ $page.post.date }}</p>
-        </div>
-        <div class="featured-image">
-            <g-image v-if="$page.post.featuredImage" :src="$page.post.featuredImage" />
-        </div>
-        <section v-html="$page.post.content">
-            
-        </section>
+        </header>
+        <div class="post-content">
+            <g-image alt=""  v-if="$page.post.featuredImage" :src="$page.post.featuredImage" />
+            <div v-html="$page.post.content"></div>
+        </div>        
     </Layout>
 </template>
 
@@ -19,6 +17,8 @@ query Post ($path: String!) {
     post: post(path: $path) {
         title
         path
+        subhead
+        layout
         date (format: "D. MMMM YYYY")
         content
         featuredImage
