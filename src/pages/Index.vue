@@ -14,7 +14,12 @@
 
     <div class="posts">
         <ul>
-            <li v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"></li>
+            <li v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node">
+              <div>
+                <h3>{{ edge.node.title }}</h3>
+
+              </div>
+            </li>
         </ul>
     </div>
 
@@ -22,7 +27,7 @@
 </template>
 
 <page-query>
-{
+query {
     posts: allPost {
         edges {
             node {
@@ -42,7 +47,8 @@
 export default {
   metaInfo: {
     title: 'Home'
-  }
+  },
+  props: ['post']
 }
 </script>
 
