@@ -32,8 +32,8 @@ collections:
         allow_add: true
         widget: "list"
         fields:
-          - {label: Location, name: location, widget: string}
-          - {label: Date and Time, name: dateTime, widget: datetime}
+          - {label: "Location", name: "location", widget: "string", default: "TBD"}
+          - {label: "Date and Time", name: "dateTime", widget: "datetime", default: "TBD"}
 
 
 # **** USEFUL REFERENCES ON YAML FORMATTING: ****
