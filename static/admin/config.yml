@@ -36,9 +36,6 @@ collections:
           - {label: Date and Time, name: dateTime, widget: datetime}
 
 
-
-
-
-      # - {label: "Course name", name: "title", widget: "string"}
-      # - {label: "Location", name: "location", widget: "string"}
-      # - {label: "Date and Time", name: "dateTime", widget: "datetime"}
+# **** USEFUL REFERENCES ON YAML FORMATTING: ****
+  # https://learn.getgrav.org/16/advanced/yaml
+  # https://github.com/darvid/trine/wiki/YAML-Primer
