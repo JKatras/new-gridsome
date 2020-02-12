@@ -19,6 +19,14 @@ module.exports = {
         }
     },
     {
+        use: '@gridsome/source-filesystem',
+        options: {
+          typeName: 'Course',
+          path: 'src/data/courses/*.md',
+          route: 'courses/:slug'
+        }
+    },
+    {
         use: `gridsome-plugin-netlify-cms`,
         options: {
           publicPath: `/admin`
