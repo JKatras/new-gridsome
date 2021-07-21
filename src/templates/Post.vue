@@ -19,7 +19,7 @@ query Post ($path: String!) {
         path
         subhead
         layout
-        date (format: "D. MMMM YYYY")
+        date (format: "MMMM DD YYYY")
         content
         featuredImage
     }
