@@ -9,4 +9,4 @@ Are my headings working?
 
 ### I kept getting my changes overwritten in the text editor
 
-!(Mushroom cloud)[/images/uploads/nuke.jpg]{.test-class}>
+<img src="/images/uploads/nuke.jpg" alt="mushroom cloud" class="im-classy">
